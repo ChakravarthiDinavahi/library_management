@@ -1,24 +1,14 @@
-# README
+# Library Management system
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Installation
 
-Things you may want to cover:
+### Database Setup
 
-* Ruby version
+* Make sure you have docker compose v2 installed. Check using `docker compose --version`. Don't use the `docker-compose` command because it defaults to v1.
+* `docker compose up` starts `mysql`
+* `bin/rails db:setup db:schema:load`
 
-* System dependencies
+### Dependencies for linux
+* Add `gem "nokogiri", force_ruby_platform: true` to Gemfile
+* Run `bundle lock --add-platform x86_64-linux`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
