@@ -72,6 +72,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "minitest"
 end
 
-gem "nokogiri", force_ruby_platform: true
+# gem "nokogiri", force_ruby_platform: true
