@@ -1,16 +1,16 @@
 require "minitest_helper"
 
-
-require_relative '/Users/cdinahi/chakri/rails/library_management/app/models/book'
+# require_relative '/Users/cdinahi/chakri/rails/library_management/app/models/application_record'
+#
+# require_relative '/Users/cdinahi/chakri/rails/library_management/app/models/book'
 
 describe Book do
   subject = Book.new
   # subject { Book.new}
 
-  context 'validations' do
+  # context 'validations' do
     it 'It must have a id' do
-
-      assert_includes(subject.attributes, id)
+      assert_includes(subject.attributes, "id")
     end
 
     it 'It must have a title' do
@@ -36,5 +36,5 @@ describe Book do
     it 'It must have a cost' do
 
     end
-  end
+  # end
 end
