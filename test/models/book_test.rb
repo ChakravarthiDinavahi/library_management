@@ -1,40 +1,35 @@
 require "minitest_helper"
 
-# require_relative '/Users/cdinahi/chakri/rails/library_management/app/models/application_record'
-#
-# require_relative '/Users/cdinahi/chakri/rails/library_management/app/models/book'
 
 describe Book do
-  subject = Book.new
-  # subject { Book.new}
 
-  # context 'validations' do
-    it 'It must have a id' do
-      assert_includes(subject.attributes, "id")
+  let(:book) { books(:war_of_lanka) }
+
+  describe 'validations' do
+
+    it 'is valid with valid params' do
+      assert book.valid?
     end
 
-    it 'It must have a title' do
-
+    it 'is invalid without an title' do
+      book.title = nil
+      # TODO: Test invalid senario
     end
 
-    it 'It must have a author' do
-
-    end
-
-    it 'It must have ISBN' do
-
-    end
-
-    it 'It must have a publisher' do
+    it 'is invalid without an author' do
 
     end
 
-    it 'It must have a copies' do
-
+    it 'is invalid without an ISBN' do
     end
 
-    it 'It must have a cost' do
-
+    it 'is invalid without an publisher' do
     end
-  # end
+
+    it 'is invalid without copies' do
+    end
+
+    it 'is invalid without cost' do
+    end
+  end
 end
