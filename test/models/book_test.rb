@@ -1,9 +1,8 @@
-require "minitest_helper"
-
+require 'minitest_helper'
 
 describe Book do
 
-  let(:book) { books(:war_of_lanka) }
+  let(:book) { book(:war_of_lanka) }
 
   describe 'validations' do
 
