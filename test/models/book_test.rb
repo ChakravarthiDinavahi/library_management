@@ -2,7 +2,8 @@ require 'minitest_helper'
 
 describe Book do
 
-  let(:book) { book(:war_of_lanka) }
+  let(:attrs) { attributes_for(:book) }
+  let(:book) { Book.new(attrs) }
 
   describe 'validations' do
 

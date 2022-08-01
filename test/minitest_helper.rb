@@ -29,3 +29,11 @@ class Minitest::Spec
     DatabaseCleaner.clean
   end
 end
+
+class Minitest::Unit::TestCase
+  include FactoryBot::Syntax::Methods
+end
+
+class Minitest::Spec
+  include FactoryBot::Syntax::Methods
+end

@@ -81,6 +81,7 @@ group :test do
   gem "minitest"
   gem "database_cleaner-active_record"
   gem "simplecov", require: false
+  gem "factory_bot_rails"
 end
 
 # gem "nokogiri", force_ruby_platform: true

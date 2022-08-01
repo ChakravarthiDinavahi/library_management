@@ -4,13 +4,3 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-
-war_of_lanka:
-  title: War of Lanka
-  language: English
-  publisher: HarperCollins India
-  publication date: 3 October 2022
-  isbn: 9356291527
-  author: Amish Tripati
-  copies: 1
-  cost: 10000
